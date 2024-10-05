@@ -1,0 +1,81 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor de la calculadora */
+#calculadora {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+}
+
+/* Inputs de los números */
+#calculadora input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2em;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: #f1f3f4;
+}
+
+/* Botones */
+#keys {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 10px;
+    width: 100%;
+}
+
+/* Estilo para todos los botones */
+#keys button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Botones con efecto hover */
+#keys button:hover {
+    background-color: #45a049;
+}
+
+/* Botón especial (CE) */
+#keys button:nth-child(7) {
+    background-color: #f44336;
+}
+
+#keys button:nth-child(7):hover {
+    background-color: #e53935;
+}
+
+/* Display (pantalla de la calculadora) */
+#display {
+    width: 100%;
+    padding: 15px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    margin-top: 15px;
+    background-color: #f1f3f4;
+    text-align: right;
+}

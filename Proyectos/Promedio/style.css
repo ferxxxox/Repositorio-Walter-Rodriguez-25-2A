@@ -1,0 +1,93 @@
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #3b5998;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #4CAF50;
+    margin: 10px 0;
+}
+
+/* Input styling */
+input[type="number"] {
+    padding: 10px;
+    font-size: 1.2em;
+    border: 2px solid #4CAF50;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 300px;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #f57c00;
+}
+
+
+p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+#salida {
+    font-weight: bold;
+    color: #ff5722;
+}
+
+/* Texto de promedio */
+#texto {
+    font-size: 1.5em;
+    color: #e91e63;
+    margin-top: 20px;
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: #f0fff0;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+}
+
+/* Layout para dispositivos móviles */
+@media (max-width: 768px) {
+    body {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    input[type="number"],
+    button,
+    #texto {
+        width: 100%;
+        max-width: none;
+    }
+}
